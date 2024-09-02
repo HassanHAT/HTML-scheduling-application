@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>When2meet</title>
+</head>
+
+<body>
+    <h1>When2meet</h1>
+    <nav>
+        <ul>
+            <li><a href="#create-event">Create Event</a></li>
+            <li><a href="#select-availbilty">Select Availbilty</a></li>
+            <li><a href="#view-results">View Results</a></li>
+            <li><a href="#sign-up">Sign up</a></li>
+        </ul>
+    </nav>
+    <h2 id="create-event">Create Event</h2>
+
+    <form>
+        <label for="Ename">Event Name:</label>
+        <input type="text" name="Ename" id="Ename" required>
+        <label for="Edescription"> Event Description:</label>
+        <textarea name="Edescription" id="Edescription"></textarea>
+        <label for="startDate">Start Date:</label>
+        <input type="date" name="startDate" id="startDate">
+        <label for="endDate">End Date:</label>
+        <input type="date" name="endDate" id="endDate">
+        <label for="tincrement">Time Increment</label>
+        <select name="tincrement" id="tincrement">
+            <option value="15min">15 minutes</option>
+            <option value="30min">30 minutes</option>
+            <option value="60min">60 minutes</option>
+        </select>
+        <input type="button" value="Create Event">
+    </form>
+
+    <h2 id="select-availbilty">Input Availbilty</h2>
+    <form>
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wedensday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+            <tr>
+                <td>9:00 AM</td>
+                <td><input type="checkbox" name="Monday" id="Monday"></td>
+                <td><input type="checkbox" name="Tuesday" id="Tuesday"></td>
+                <td><input type="checkbox" name="Wedensday" id="Wedensday"></td>
+                <td><input type="checkbox" name="Thursday" id="Thursday"></td>
+                <td><input type="checkbox" name="Friday" id="Friday"></td>
+            </tr>
+        </table>
+
+        <input type="button" value="Sumbit Availbilty">
+    </form>
+    <h2 id="view-results">View Results</h2>
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wedensday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <td>9:00 AM</td>
+            <td>3 available</td>
+            <td>2 available</td>
+            <td>4 available</td>
+            <td>1 available</td>
+            <td>5 available</td>
+
+        </tr>
+    </table>
+
+    <p>Sharable link: <a href="https://www.when2meet.com">https://www.when2meet.com</a></p>
+
+    <h2 id="sign-up">Sign Up</h2>
+    <form>
+        <label for="Uname">Username: </label>
+        <input type="text" name="Uname" id="Uname" required />
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" required />
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password" required />
+
+        <input type="submit" value="Subscribe" />
+    </form>
+</body>
+<footer>
+    <p>&copy; 2024 When2meet, All right reserved </p>
+</footer>
+
+</html>
